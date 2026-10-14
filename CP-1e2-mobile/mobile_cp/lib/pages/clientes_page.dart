@@ -177,8 +177,6 @@ class _HomePageState extends State<HomePage> {
             _capCard(),
             const SizedBox(height: 12),
             _formulario(),
-            
-            // Botão Limpar Tudo com Tooltip (aparece se tiver mais de 5 pessoas)
             if (_pessoas.length > 5) ...[
               const SizedBox(height: 8),
               Padding(
@@ -289,7 +287,6 @@ class _HomePageState extends State<HomePage> {
       padding: const EdgeInsets.symmetric(horizontal: 16),
       child: Column(
         children: [
-          // Tooltip no campo de Nome
           Tooltip(
             message: 'Digite o nome completo da pessoa',
             child: TextField(
@@ -308,7 +305,6 @@ class _HomePageState extends State<HomePage> {
           Row(
             children: [
               Expanded(
-                // Tooltip no campo de Identificação/Matrícula
                 child: Tooltip(
                   message: 'Digite o número de identificação ou matrícula',
                   child: TextField(
@@ -325,7 +321,6 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
               const SizedBox(width: 12),
-              // Tooltip no botão de Entrada
               Tooltip(
                 message: 'Cadastra a entrada da pessoa no restaurante',
                 child: SizedBox(
