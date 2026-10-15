@@ -71,5 +71,7 @@ lib/
 ├── widgets/
 │   └── pessoa_item.dart     # Componente visual customizado para os itens da lista
 │
-└── main.dart / pages/
-    └── home_page.dart       # Tela principal com toda a lógica de estado e interface
+└── pages/
+│    └── home_page.dart       # Tela principal com toda a lógica de estado e interface
+│
+└── main.dart 
